@@ -1,4 +1,3 @@
-
 class TicTacToe
     def initialize 
         @board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
@@ -99,3 +98,100 @@ class TicTacToe
   
   
   end
+
+# class TicTacToe
+  
+#   def initialize 
+#     @board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+#   end 
+#   WIN_COMBINATIONS = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
+
+# def display_board
+# puts "------------"
+# puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
+# puts "------------"
+# puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
+# puts "------------"
+# puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
+#   end 
+  
+# def input_to_index(user_input)
+#   user_input.to_i - 1
+#   end
+
+# def move(index, piece)
+#   @board[index] = piece
+# end
+
+# def position_taken?(index)
+#   @board[index] != " "
+   
+#   end
+  
+# def valid_move?(index)
+#   !position_taken?(index) && index.between?(0,8)
+# end 
+
+# def turn_count
+# counter =0
+# @board.each do |position|
+#   if position == "O" || position == "X"
+#     counter +=1
+#   end
+# end
+# return counter
+# end
+
+# def current_player
+# turn_count.even? == true ? "X" : "O"
+# end
+
+# # def turn
+# #   puts 'Please enter 1-9:'
+# #   user_input = gets.strip
+# #   index = input_to_index(user_input)
+
+# #   if valid_move?(index)
+# #     move(index, piece,current_player)
+# #     display_board
+# #   else
+# #     turn
+# #   end
+# # end
+
+# # def turn(board)
+# #   puts "Please enter 1-9:"
+# #   user_input=gets.strip
+# #   index=input_to_index(user_input)
+# #   until valid_move?(index)==true
+# #     puts "Please enter 1-9:"
+# #     input=gets.strip
+# #     index=input_to_index(user_input)
+# #   end
+# #   character=current_player(board)
+# #   move(index, piece)
+# #   display_board
+# # end
+
+
+# def won?(board)
+#   WIN_COMBINATIONS.detect do |win_combination|
+#     if
+#       win_combination.all? do |win_index|
+#         board[win_index]=="X"
+#       end
+#       true
+#     elsif
+#       win_combination.all? do |win_index|
+#         board[win_index]=="O"
+#       end
+#       true
+#     else
+#       false
+#     end
+#   end
+# end
+# end
+
+
+
